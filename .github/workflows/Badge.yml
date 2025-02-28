@@ -1,0 +1,63 @@
+name: Badge
+
+on:
+  push:
+    branches:
+      - master
+    # Trigger Action for a new release only
+    # tags:
+    # - '*.*.*'
+
+jobs:
+  update-badges:
+    name: Update Badges
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@main
+      - name: Download cloc
+        run: |
+          $Token = "${{ secrets.GITHUB_TOKEN }}"
+          $Headers = @{
+              Accept        = "application/json"
+              Authorization = "Bearer $Token"
+          }
+          $Parameters = @{
+              Uri             = "https://api.github.com/repos/AlDanial/cloc/releases/latest"
+              Headers         = $Headers
+              UseBasicParsing = $true
+              Verbose         = $true
+          }
+          $Tag = (Invoke-RestMethod @Parameters).tag_name.replace("v", "")
+
+          $Parameters = @{
+              Uri             = "https://github.com/AlDanial/cloc/releases/download/v$Tag/cloc-$Tag.exe"
+              OutFile         = "$PSScriptRoot\cloc.exe"
+              UseBasicParsing = $true
+              Verbose         = $true
+          }
+          Invoke-WebRequest @Parameters
+
+      - name: Get the Numbers
+        run: |
+          $JSON    = & "$PSScriptRoot\cloc.exe" "src/SophiApp" --exclude-list-file=".clocignore" --json | ConvertFrom-Json
+          $blank   = $JSON.SUM.blank
+          $comment = $JSON.SUM.comment
+          $code    = $JSON.SUM.code
+          # "$((($blank + $comment + $code)/1000).ToString("#.#").replace(",", "."))k"
+          $Summary = ("{0:N1}k" -f (($blank + $comment + $code)/1000)).replace(",", ".")
+
+          Write-Verbose -Message ($blank + $comment + $code) -Verbose
+
+          echo "CODE_LINES=$Summary" >> $env:GITHUB_ENV
+
+      - name: Writing to Gist
+        uses: schneegans/dynamic-badges-action@master
+        with:
+          auth: ${{ secrets.GIST_SophiApp }}
+          gistID: c9f6b02ff4037050dcaade30c574bac7
+          filename: SophiApp.json
+          label: Lines of Code
+          message: ${{ env.CODE_LINES }}
+          namedLogo: C Sharp
+          color: brightgreen

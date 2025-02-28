@@ -3,10 +3,10 @@
     <a title="Русский" href="README_ru-ru.md"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" height="11px"/></a>
     <a title="Italiano" href="README_it-it.md"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" height="11px"/></a>
     <a title="Українська" href="README_uk-ua.md"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" height="11px"/></a>
-<a title="Deutsch" href="README_de-de.md"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" height="11px"/></a>
+<a title="English" href="README.md"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_(1-2).svg" height="11px"/></a>
 </div>
 
-# SophiApp. The next chapter of the [Sophia Script](https://github.com/farag2/Sophia-Script-for-Windows) project
+# SophiApp. Das nächste Kapitel des [Sophia Script](https://github.com/farag2/Sophia-Script-for-Windows) -Projekts
 
 <img src="https://raw.githubusercontent.com/Sophia-Community/SophiApp/master/img/sophiapp_big.svg" alt="Sophia Script" width='350' align="right">
 
@@ -74,40 +74,36 @@
 
 <p align="center">
     •
-    <a href="#donations">Donations</a>
+    <a href="#Spenden">Spenden</a>
     •
-    <a href="#system-requirements">System Requirements</a>
+    <a href="#System-Voraussetzungen ">System Voraussetzungen</a>
     •
-    <a href="#installation">Installation</a>
+    <a href="#Installation">Installation</a>
     •
-    <a href="#key-features">Key features</a>
+    <a href="#Haupt-Features">Haupt-Features</a>
     •
-    <a href="#videos">Videos</a>
+    <a href="#Videos">Videos</a>
     •
-    <a href="#screenshots">Screenshots</a>
+    <a href="#Screenshots">Screenshots</a>
     •
-    <a href="#addendum">Addendum</a>
+    <a href="#Nachtrag">Nachtrag</a>
     •
-    <a href="#translating">Translating</a>
+    <a href="#Übersetzung">Übersetzung</a>
     •
-    <a href="#media">Media</a>
+    <a href="#Media">Media</a>
     •
     <a href="https://github.com/Sophia-Community/SophiApp/blob/master/CHANGELOG.md">Changelog</a>
 </p>
 
 ***
 
-## SophiApp 2.0
-
-`SophiApp 2.0 | Daria` is in active development (no ETA, late 2023). You may follow the developmet commits [here](https://github.com/Sophia-Community/SophiApp/commits/dev-winappsdk). Read [more](https://t.me/SophiaNews/1311).
-
-## About SophiApp
+## Über SophiApp
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size30&pause=1000&width=435&lines=Made+with+%E2%9D%A4%EF%B8%8F+of+Windows%C2%AE)
 
-> **Note**: `SophiApp` is a free, open-source app for fine-tuning `Windows 10` & `Windows 11`. It offers a modern UI/UX, more than 130 unique tweaks, and shows how Windows can be configured without making any harm to Windows.
+> **Aufgepasst**: `SophiApp` ist eine freie, open-source App für das fine-tuning von `Windows 10` & `Windows 11`. Sie bietet ein modernes UI/UX, über 130 einzigartige Tweaks, und zeigt, wie Windows konfiguriert werden kann, ohne dem System zu schaden.
 
-## Donations
+## Spenden
 
 <a href="https://yoomoney.ru/to/4100116615568835"><img src="https://yoomoney.ru/i/shop/iomoney_logo_color_example.png" width=220px height=46px align="left"></a>
 <a href="https://ko-fi.com/farag"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width=220px height=46px align="left"></a>
@@ -117,7 +113,7 @@
 |                                             USDT (TRC20)                                             |
 |                                 `TQtMjdocUWbKAeg1kLtB4ApjAVHt1v8Rtf`                                 |
 
-### System Requirements
+### System-Voraussetzungen
 
 |             Version             |   Marketing name    |    Build    | Arch |         Editions         |
 |:-------------------------------:|:-------------------:|:-----------:|:----:|:------------------------:|
@@ -127,13 +123,13 @@
 | Windows 10 22H2                 | 2022 Update         | 19045.2006+ | x64  | Home/Pro/Enterprise      |
 | Windows 10 21H2                 | October 2021 Update | 19044.1706+ | x64  | Home/Pro/Enterprise/LTSC |
 
-> **Note**: Check out the [Windows 10](https://support.microsoft.com/en-us/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb), [Windows 11](https://support.microsoft.com/topic/windows-11-update-history-a19cd327-b57f-44b9-84e0-26ced7109ba9), and [Windows 11 Insider Preview](https://docs.microsoft.com/en-us/windows-insider/flight-hub/) release history.
+> **Aufgepasst**: Schaue dir [Windows 10](https://support.microsoft.com/en-us/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb),  und [Windows 11](https://support.microsoft.com/topic/windows-11-update-history-a19cd327-b57f-44b9-84e0-26ced7109ba9) sowie [Windows 11 Insider Preview](https://docs.microsoft.com/en-us/windows-insider/flight-hub/) release history an.
 
 ## Installation
 
-### Download SophiApp via PowerShell/Winget/Chocolatey/Scoop
+### Downloade SophiApp mit PowerShell/Winget/Chocolatey/Scoop
 
-Download the always latest SophiApp archive by invoking (`not as administrator too`) in PowerShell
+Um die aktuelle SophiApp-Version zu downloaden invoke (`Administrator ist keine Voraussetzung`) in PowerShell
 
 ```powershell
 irm app.sophi.app -useb | iex
@@ -145,10 +141,10 @@ irm app.sophi.app -useb | iex
 winget install --id=TeamSophia.SophiApp --accept-source-agreements --location D:\
 ```
 
-> **Note**: If you installed `SophiApp` via `WinGet`, before removing files, you should uninstall `SophiApp` via `WinGet` first, unless you won't be able to re-download package again.
+> **Note**: Wenn Sie `SophiApp` über `WinGet` installiert haben, sollten Sie `SophiApp` zuerst über `WinGet` deinstallieren, es sei denn, Sie sind nicht in der Lage, das Paket erneut herunterzuladen.
 
 ```powershell
-winget uninstall sophiapp --force
+`winget uninstall sophiapp --force`
 ```
 
 [Chocolatey](https://community.chocolatey.org/packages/sophiapp)
@@ -166,44 +162,44 @@ scoop install sophiapp
 
 [Beta versions](https://github.com/Sophia-Community/SophiApp/releases)
 
-> **Note**: `SophiApp` is fully portable: it doesn't have any config (yet) and doesn't save any data into the registry. Just extract the `SophiApp` folder with `Bin` folder and `SophiApp.exe.config` file, and run `SophiApp.exe`.
+> **Aufgepasst**: `SophiApp` ist vollständig portable: Die App hat (bisher) keine Konfiguration-Datei und speichert keine Daten in der Registry. Entpacke den `SophiApp` Ordner mit samt `Bin` Ordner und `SophiApp.exe.config` Datei und starte `SophiApp.exe`.
 
 ***
 
-### Warning
+### Warnung
 
-* It's allowed to be logged in as one admin user only during application startup.
-* 🔥🔥🔥`SophiApp` may not work on a homebrew Windows. Especially, if the homebrew image was created by OS makers being all thumbs who break Microsoft Defender and disable OS telemetry by purposely uprooting system components
+* Nur ein Admin-User darf gleichzeitig beim starten der Anwendung eingeloggt sein.
+* 🔥🔥🔥`SophiApp` funktioniert eventuell nicht mit einem "homebrew Windows". Ganz besonders, wenn das "homebrew Image" von OS Erstellern erstellt worden ist, die nicht wissen was sie tun, Microsoft Defender zerstören und mit voller Absicht OS-Telemetrie deaktivieren indem sie System-Komponenten "uprooten".
 
-## Key features
+## Haupt-Features
 
-* 130+ tweaks.
-* Configure your Windows by officially documented methods.
-* SophiApp has a dynamically rendered UI—nothing is hardcoded. 👻
-* SophiApp displays the current state of every feature for your Windows.
-* `SophiApp` uses the [MVVM](https://en.wikipedia.org/wiki/Model-view-viewmodel) pattern.
-* Multithreading support.
-* Checked by the [static analyzer](https://pvs-studio.com/pvs-studio), the license for which by courtesy of PVS-Studio.
-  * Big thanks to them for providing us the [license](https://pvs-studio.com/en/order/open-source-license).
-* All builds are compiled in cloud via [GitHub Actions](https://github.com/Sophia-Community/SophiApp/actions)
-  * You may compare a zip archive hash sum on the release page with the hash in cloud console in the `Compress Files` category to be sure that the archive wasn't spoofed (you have to be logged into your GitHub account to be able to view Actions logs);
-* High resolutions support.
-* Built-in search engine.
-  * Functions can be found by searching their headers and descriptions.
-* Dark & light themes support.
-  * The app can change its' theme instantly when you change your default Windows theme mode for apps.
-* Configure Privacy & Telemetry.
-* Configure UI & Personalization of your system.
-* Install the latest `Microsoft Visual C++ Redistributable Packages 2015–2022 x86/x64`;
-* Install the latest `.NET Desktop Runtime 7 x86/x64`;
-* Uninstall OneDrive "correctly".
-* Uninstall UWP apps using a dynamically rendered list of apps with localized packages names and native icons.
-* Download and install the [HEVC Video Extensions from Device Manufacturer](https://www.microsoft.com/p/hevc-video-extensions-from-device-manufacturer/9n4wgh0z6vhq) to let you open .heic and .heif formats.
-* Create a scheduled task to clean up Windows unused files and updates using a native toast notification.
-  * A native toast notification will be displayed where you can choose to snooze, run the cleanup task or dismiss.
-* Configure Windows Security.
-* The ability to copy functions' descriptions or headers.
-* Many unique tweaks.
+* 130+ Tweaks.
+* Konfiguriere dein Windows mit offiziell dokumentierten Methoden.
+* SophiApp hat ein dynamisch gerendertes UI. Nichts ist hardcoded. 👻
+* SophiApp zeigt den aktuellen Status von jedem Windows-Feature.
+* `SophiApp` macht vom [MVVM](https://en.wikipedia.org/wiki/Model-view-viewmodel) gebrauch.
+* Multithreading wird unterstützt.
+* Überprüft vom [static analyzer](https://pvs-studio.com/pvs-studio). Die Lizenz wurde freundlicherweise von "PVS-Studio" zur Verfügung gestellt.
+  * Großes Dankeschön für die: [Lizenz](https://pvs-studio.com/en/order/open-source-license).
+* Alle builds sind in der Cloud kompiliert worden mit: [GitHub Actions](https://github.com/Sophia-Community/SophiApp/actions)
+  * Du kannst die Zip-Archiv-Hash-Summe von der "Release"-Page mit dem Hash in der cloud Console vergleichen. In der `Compress Files` Kategorie. Damit kannst du sicher sein, dass das Archiv nicht gespoofed ist (Du musst in deinem Github-Account eingeloggt sein, um den "Action-Log" zu sehen.);
+* Unterstützung für hohe Auflösungen.
+* Eingebaute Such-Funktion.
+  * Funktionen können über ihren Namen oder die Beschreibung gesucht werden.
+* Dunkel & Hell themes werden angeboten.
+  * Das Theme der App passt sich dynamisch deines Windows-Themes an.
+* Konfiguriere Privatsphäre & Telemetrie.
+* Konfiguriere das UI & personalisiere dein System.
+* Installiere das aktuelle `Microsoft Visual C++ Redistributable Packages 2015–2022 x86/x64`;
+* Installiere das aktuelle `.NET Desktop Runtime 7 x86/x64`;
+* Deinstalliere OneDrive "Ordnungsgemäß".
+* Deinstalliere UWP Programme indem du eine dynamisch gerenderte Liste der Apps mit übersetzten Paket-Namen und nativen Symbolen benutzt.
+* Downloade und installiere das [HEVC Video Extensions from Device Manufacturer](https://www.microsoft.com/p/hevc-video-extensions-from-device-manufacturer/9n4wgh0z6vhq) damit du .heic and .heif Formate öffnen kannst.
+* Erstelle einen geplanten "Task"(Aufgabe) um dein Windows von unbenutzten Dateien und updates zu bereinigen. Du wirst mit einer Windows-nativen "Toast"-Message erinnert.
+  * Eine Windows native Toast-Benachrichtigung wird dir angezeigt, bei der du dir aussuchen kannst, ob sie "Schlummern" soll, ob sie die Aufräum-Aktion starten soll oder ob die Aufgabe abgelehnt wird.
+* Konfiguriere die Windows Sicherheit.
+* Kopiere ganz einfach die Namen oder Beschreibungen der einzelnen Funktionen.
+* Viele einzigartige Tweaks.
 
 ## Videos
 
@@ -216,30 +212,30 @@ scoop install sophiapp
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/2.png)
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/3.png)
 
-## Localized UWP packages names
+## Lokalisierte UWP Paket-Namen
 
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/4.png)
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/5.png)
 
-## Searching feature
+## Such-Funktion
 
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/search.gif)
 
-## Instantly changing theme
+## Sofortiges ändern des Themes
 
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/theme.gif)
 
-### Native interactive toasts for the `Windows Cleanup` scheduled task
+### Natives interaktives Toasts für die `Windows Cleanup` Aufgabe
 
 ![Image](https://github.com/Sophia-Community/SophiApp/raw/master/img/Toasts.png)
 
-## Addendum
+## Nachtrag
 
-* Some functions depend on Internet access. If not, they will be hidden in UI until the access appears back.
-* You can enable hidden functions in UI by turning on the `Advanced settings` in the Settings.
-  * The hidden functions will be marked with a gear in UI.
-* After closing `SophiApp`, it creates a log file that you can attach to an open issue (or send to the [Telegram](https://t.me/sophia_chat) group) to help us understand the bug. The log file doesn't contain any sensitive personal information. We do not store any data neither in the Windows registry or any other server.
-* The list of domains the app interacts with
+* Manche Funktionen brauchen einen Internet-Zugang. Falls aktuell kein Internet vorhanden ist, werden die Funktionen versteckt, bis Internet zur Verfügung steht.
+* Du kannst versteckte Einstellungen aktivieren indem du  `Advanced settings` in den Einstellungen aktivierst.
+  * Die versteckten Einstellungen werden mit einem Zahnrad markiert.
+* Nachden `SophiApp` geschlossen wurde, wird ein Log-File generiert, den du als Github-Issue anhängen kannst (oder um sie in die [Telegram](https://t.me/sophia_chat) Gruppe zu senden). Das hilft uns, den Fehler zu verstehen. Der Log beinhaltet KEINE sensitiven Informationen. Wir speichern weder Daten in der Registry, noch auf irgendwelchen Servern.
+* Eine Liste mit Webseites mit denen SophiApp interagiert:
   * <https://raw.githubusercontent.com>
   * <https://github.com>
   * <https://download.visualstudio.microsoft.com>
@@ -248,9 +244,9 @@ scoop install sophiapp
   * <https://g.live.com>
   * <https://oneclient.sfx.ms>
 
-## Translating
+## Übersetzung
 
-* Feel free to translate the UI into your language by taking as a basis one of [UIData_xx.json](https://github.com/Sophia-Community/SophiApp/tree/master/src/SophiApp/Localizations) and creating a new [.xaml](https://github.com/Sophia-Community/SophiApp/tree/master/src/SophiApp/Localizations) file.
+* Du kannst jederzeit eine Übersetzung beitragen indem du dir ein Template: [UIData_xx.json](https://github.com/Sophia-Community/SophiApp/tree/master/src/SophiApp/Localizations) nimmst und damit eine neue [.xaml](https://github.com/Sophia-Community/SophiApp/tree/master/src/SophiApp/Localizations) Datei erstellst.
 
 ## Media
 
